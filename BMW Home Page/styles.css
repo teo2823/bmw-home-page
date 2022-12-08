@@ -1,0 +1,532 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+h2 {
+    font-size: 2.7em;
+}
+h3 {
+    font-size: 2em;
+}
+p {
+    font-size: 1.25em;
+}
+a {
+    text-decoration: none;
+}
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: darkblue;
+    cursor: pointer;
+}
+
+
+main {
+    position: relative;
+    top: 86px;
+}
+/*Header*/
+
+header {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    background-color: rgb(245, 245, 245);
+    border-bottom: 2px solid darkblue;
+}
+.container-header {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.logo {
+    margin: 0;
+}
+.logo img {
+    height: 80px;
+    padding: 8px 30px; 
+}
+
+header nav a {
+    color: darkblue;
+    font-weight: bold;
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 5px;
+}
+
+header nav a:hover {
+    color: black;
+}
+
+/*hero*/
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ), url(https://wallpaperaccess.com/full/2788795.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero h1 {
+    margin: 0;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.hero h3 {
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.8em;
+    letter-spacing: 3px;
+}
+
+.hero button {
+    background-color: rgba(0,0,0,0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 450;
+    border: solid white 1.5px;
+    padding: 5px 25px;
+}
+
+.hero button:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.hero button:active {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    border: solid 1.5px black;
+}
+
+/* Quienes somos? */
+
+.quienes-somos {
+    position: relative;
+    top: 40px;
+    height: 60vh;
+    border-bottom: 3px solid rgb(93, 93, 252);
+    margin-bottom: 40px;
+}
+
+.container-quienes-somos {
+    padding: 5px 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container-quienes-somos h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+.container-quienes-somos p {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.foto-quienes-somos {
+    display: none;
+}
+
+/*modelos*/
+
+#modelos {
+    margin: 0;
+    border-bottom: 4px darkblue solid;
+    color: white;
+    background-color: black;
+    position: relative;
+
+}
+
+.modelos-carros {
+    padding: 0px 0px 20px 0px;
+}
+.modelos-carros p{
+    display: none;
+}
+
+.container-modelos h2 {
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+
+.cartas {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+    margin: 20px 30px;
+    border-radius: 5px;
+}
+
+.cartas button:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.cartas button:active {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    border: solid 2px black;
+}
+
+.cartas h3 {
+    margin: 5px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,1);
+}
+
+.cartas button {
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px 15px;
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    float: left;
+    font-size: 12px;
+    margin: 5px ;
+    border-radius: 5px;
+    border: solid white 1px;
+}
+.cartas:first-child {
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    ),  url(./imagenes/Modelos-Carros/BMW\ M2.webp);
+}
+
+.cartas:nth-child(2) {
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    ),  url(./imagenes/Modelos-Carros/BMW\ M3.jpg);   
+}
+
+.cartas:nth-child(3) {
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    ),  url(./imagenes/Modelos-Carros/BMW\ M4.jpg);
+}
+
+.cartas:nth-child(4) {
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    ),  url(./imagenes/Modelos-Carros/BMW\ X5M.jpg);
+
+}
+
+.cartas:nth-child(5) {
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    ),  url(./imagenes/Modelos-Carros/BMW\ X6M.jpg);    
+}
+
+.cartas:nth-child(6) {
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    ),  url(./imagenes/Modelos-Carros/BMW\ Z4.jpg); 
+}
+
+/* Localidades */
+
+.tiendas {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    text-align: center;
+    border-bottom: 3px solid rgb(247, 39, 2);
+}
+
+.container-tiendas {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.container-tiendas h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    padding: 20px 0px 0px 0px;
+    font-size: 50px;
+}
+
+.paises button {
+    background-color: rgba(0,0,0,0.5);
+    border: solid white 1px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 12px;
+}
+.paises button:hover {
+    background-color: rgba(0,0,0,0.8);   
+}
+
+.paises button:active {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    border: solid 1px black;
+}
+
+.paises {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+    margin: 20px 30px;
+    border-radius: 5px;
+}
+
+.paises h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 10px rgba(0,0,0,1);
+    color: white;
+}
+
+.paises:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ), url(./imagenes/Locaciones/Europa.jpg);
+}
+
+.paises:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ), url(./imagenes/Locaciones/America.jpg) 
+}
+.paises:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ), url(./imagenes/Locaciones/Asia.jpg);
+}
+
+.paises:nth-child(4) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ), url(./imagenes/Locaciones/Africa.jpg)
+}
+
+/*footer*/
+
+footer {
+    background-color: black;
+    color: white;
+    position: relative;
+    padding: 40px 10px 0px;
+    margin: 0;
+    width: 100%;
+}
+
+.container-footer {
+
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer h2{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.logo-footer img {
+    height: 70px;
+    margin: 0 20px;
+}
+
+.container-info-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 10px 0 20px
+}
+
+.container-info-footer li {
+    list-style: none;
+    color: darkgrey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.container-info-footer li:hover {
+    color: rgb(78, 78, 78);
+}
+
+.info-footer {
+    margin-right: 20px;
+    padding-left: 0;
+}
+
+h5.copy {
+    height: 80px;
+    color: darkgray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0px 0px 5px;
+    font-size: 12px;
+}
+
+/*media quary*/
+
+@media (min-width: 840px) {
+    header .container-header {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header nav a {
+        margin-right: 20px;
+    }
+
+    .hero h1 {
+        font-size: 5em;
+    }
+
+    .hero h3 {
+        font-size: 2.5em;
+    }
+    .foto-quienes-somos {
+        background-image: url(https://mediapool.bmwgroup.com/cache/P9/201908/P90362567/P90362567-the-bmw-product-portfolio-in-the-luxury-segment-08-2019-2249px.jpg);
+        display: flex;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        width: 3800px;
+        border-radius: 10px;
+    }
+
+    .container-quienes-somos {
+        display: flex;
+        max-width: 1300px;
+        max-height: 400px;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+    div.info-quienes-somos {
+        padding: 40px;
+    }
+    .info-quienes-somos h1 {
+        font-size: clamp(2em, 4vw, 5em);
+    }
+
+    #modelos .modelos-carros {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cartas {
+        width: 600px;
+        height: 300px;
+    }
+    .cartas button{
+        display: none;
+    }
+    .cartas h3 {
+        height: 200px;
+       font-size: clamp(3em, 4vw, 3em);  
+       display: flex;
+       align-items: flex-end;
+       padding-left: 10px;
+    }
+    .locaciones {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .paises {
+        display: block;
+        width: 350px;
+    }
+
+    .container-footer{
+        padding: 40px 40px;
+    }
+    .container-info-footer {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1040px) {
+    .paises {
+        width: 500px;
+    }
+}
